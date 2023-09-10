@@ -8,7 +8,6 @@ import com.example.carparkdemo.service.token.JwtProvider;
 import com.example.carparkdemo.service.token.RefreshToken;
 import com.example.carparkdemo.service.token.RefreshTokenService;
 import com.example.carparkdemo.service.token.TokenRefreshResponse;
-import jdk.jfr.ContentType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.*;
@@ -16,8 +15,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping()
