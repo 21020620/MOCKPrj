@@ -38,6 +38,7 @@ public class SecurityConfig {
                 .cors(withDefaults())
                 .authorizeHttpRequests((authz) -> authz
                         .requestMatchers("/login").permitAll()
+                        .requestMatchers("/refreshtoken").permitAll()
                         .requestMatchers("/api/**").hasRole("HRStaff")
                         .anyRequest().authenticated()
                 );

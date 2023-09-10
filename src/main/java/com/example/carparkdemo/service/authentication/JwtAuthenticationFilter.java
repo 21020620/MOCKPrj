@@ -2,6 +2,7 @@ package com.example.carparkdemo.service.authentication;
 
 import com.example.carparkdemo.entities.Employee;
 import com.example.carparkdemo.service.HR.IHRService;
+import com.example.carparkdemo.service.token.JwtProvider;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

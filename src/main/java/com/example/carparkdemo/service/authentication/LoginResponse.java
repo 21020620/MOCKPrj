@@ -6,8 +6,11 @@ import org.springframework.stereotype.Component;
 public class LoginResponse {
     private String token;
 
-    public LoginResponse(String token) {
+    private String refreshToken;
+
+    public LoginResponse(String token, String refreshToken) {
         this.token = token;
+        this.refreshToken = refreshToken;
     }
 
     public LoginResponse() {
@@ -21,4 +24,11 @@ public class LoginResponse {
         this.token = token;
     }
 
+    public String getRefreshToken() {
+        return refreshToken;
+    }
+
+    public void setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
+    }
 }

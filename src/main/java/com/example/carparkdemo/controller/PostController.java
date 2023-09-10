@@ -2,22 +2,11 @@ package com.example.carparkdemo.controller;
 
 import com.example.carparkdemo.entities.*;
 import com.example.carparkdemo.service.HR.IHRService;
-import com.example.carparkdemo.service.authentication.JwtProvider;
-import com.example.carparkdemo.service.authentication.LoginRequest;
-import com.example.carparkdemo.service.authentication.LoginResponse;
 import com.example.carparkdemo.service.car.ICarService;
 import com.example.carparkdemo.service.parkinglot.IParkingService;
-import com.example.carparkdemo.service.parkinglot.ParkingLotService;
 import com.example.carparkdemo.service.ticket.ITicketService;
-import com.example.carparkdemo.service.ticket.TicketService;
 import com.example.carparkdemo.service.trip.ITripService;
-import com.example.carparkdemo.service.trip.TripService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

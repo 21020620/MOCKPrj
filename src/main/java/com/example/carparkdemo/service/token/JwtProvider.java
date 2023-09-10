@@ -1,4 +1,4 @@
-package com.example.carparkdemo.service.authentication;
+package com.example.carparkdemo.service.token;
 
 import com.example.carparkdemo.service.HR.IHRService;
 
@@ -17,7 +17,7 @@ public class JwtProvider {
     @Autowired
     private IHRService HRService;
 
-    private final long JWT_EXPIRATION = 604800000L;
+    private final long JWT_EXPIRATION = 30000L;
 
     public String generateToken(Long id) {
         Date now = new Date();
