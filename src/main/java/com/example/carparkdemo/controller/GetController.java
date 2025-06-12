@@ -8,7 +8,6 @@ import com.example.carparkdemo.service.ticket.ITicketService;
 import com.example.carparkdemo.service.trip.ITripService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
-import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
